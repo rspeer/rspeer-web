@@ -1,0 +1,203 @@
+/**** Base styles ****/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 11pt;
+  line-height: 1.7em;
+  background: #333;
+  color: #FFF;
+}
+
+section, nav, header, footer {
+  display: block;
+}
+
+
+p {
+  margin-top: 1ex;
+}
+
+h1, h2, h3, .tagline {
+  font-family: 'Kreon', 'Georgia', serif;
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  color: #ccf;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 18pt;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+  color: #afa;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 12pt;
+  line-height: 1em;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+
+a,
+a code {
+  color: #FB4;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code { 
+  color: #4BF; 
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+  background: black;
+}
+
+a img { border: none; }
+
+#main {
+  line-height: 1.2em;
+  margin: 1em;
+  padding: 1em;
+  -webkit-border-radius: 0.8em;
+     -moz-border-radius: 0.8em;
+          border-radius: 0.8em;
+  background: #000;
+}
+
+.breadcrumbs {
+    margin: 0;
+}
+.breadcrumbs li {
+    display: inline;
+    color: #ccf;
+    font-family: "Kreon", "Georgia", serif;
+    font-size: 18pt;
+}
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+/*
+#container {
+  border: 1px solid #666;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+*/
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+/*     -o-transition-duration: 0.8s;*/
+          transition-duration: 0.8s;
+
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+/*     -o-transition-property: height, width;*/
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+/*     -o-transition-property:      -o-transform, opacity;*/
+          transition-property:         transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+/*     -o-transition-duration: 0s;*/
+          transition-duration: 0s;
+}
+
+
+
+/**** Super list ****/
+
+#super-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+#super-list li {
+  display: inline-block;
+  float: left;
+  line-height: 1.2em;
+  margin: 2px;
+  margin-bottom: 1ex;
+  padding: 1em;
+  font-weight: 300;
+  -webkit-border-radius: 0.8em;
+     -moz-border-radius: 0.8em;
+          border-radius: 0.8em;
+  background: #000;
+}
+
+#super-list.masonry li {
+  width: 210px;
+}
+#super-list.masonry li.blog {
+  width: 460px;
+}
+#super-list.masonry li.research {
+  width: 460px;
+}
+
+#super-list.masonry li.blog h2 {
+  color: #afa;
+}
+#super-list.masonry li.music h2 {
+  color: #e6d;
+}
+#super-list.masonry li.project h2 {
+  color: #ffa;
+}
+#super-list.masonry li.research h2 {
+  color: #fcc;
+}
+#super-list.masonry li.fun h2 {
+  color: #fa5;
+}
+#super-list.masonry li.puzzle h2 {
+  color: #cff;
+}
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+/* fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+

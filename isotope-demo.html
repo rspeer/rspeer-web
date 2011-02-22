@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rob Speer</title>
+  
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+  
+<h1>Rob Speer</h1>
+  
+<ul id="super-list" class="masonry clearfix">
+  <li class="music">
+    <h3>Music</h3><h2>Metastable Dance</h2>
+    <p>An original string quartet I wrote in 2005.</p>
+  </li>
+  <li class="project">
+    <h3>Project</h3><h2>CONFUZZLE</h2>
+    <p>
+    </p>
+    <p>An incredibly compact printable wordlist containing all the words you
+    can play in word games, including the long ones.</p>
+  </li>
+  <li class="blog">
+    <h3>Blog</h3><h2>Setting up a new site</h2>
+    <p>When I came across a <a href="isotope.metafizzy.co">JavaScript
+    library</a> for making interesting-looking layouts out of a series of
+    haphazard boxes, my first thought was wondering why I'd ever want to make a
+    website that disorganized. My second thought was that I needed a
+    new personal website anyway.  </p>
+  </li>
+  <li class="game">
+    <h3>Game</h3><h2>Duality</h2>
+    <p>
+    A two-player trick-taking card game, with an enhanced version for 
+    a deck of special cards called the Decktet.</p>
+  </li>
+  <li class="fun">
+    <h3>Fun</h3><h2>Final Fantasy Theater 1000</h2>
+    <p>Making a great game better by making its silly dialogue sillier.</p>
+  </li>
+</ul>
+
+  
+  <footer></footer>
+
+  <script src="js/jquery-1.4.4.min.js"></script>
+  <script src="jquery.isotope.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $list = $('#super-list');
+  $list.isotope({
+    layoutMode : 'masonry',
+    masonry : {
+      columnWidth: 250
+    }
+  });
+});
+
+// load Google Web Fonts
+WebFontConfig = {
+  google: { families: ['Kreon']},
+};
+
+(function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+</body>
+</html>

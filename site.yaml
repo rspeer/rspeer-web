@@ -1,0 +1,18 @@
+mode: development
+media_root: media
+media_url: file:///home/rspeer/hack/hyde-experiments/hyde-initial/media
+deploy_root: deploy
+base_url: file:///home/rspeer/hack/hyde-experiments/hyde-initial/deploy
+template: hyde.ext.jinja2
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.blockdown.BlockdownPlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.sorter.SorterPlugin
+aggregators:
+meta:
+    extends: base.html
+    charset: utf-8
+    author: Rob Speer
+    default_block: markdown
