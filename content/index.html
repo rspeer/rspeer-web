@@ -5,23 +5,9 @@ listing: True
 ===
 
 {% block header %}
-<h1>Rob Speer</h1>
+<h1><a href="#">Rob Speer</a></h1>
 {% endblock header %}
 
 {% block main %}
-<ul id="super-list" class="masonry clearfix">
-{% for page in resource.node.walk_resources() %}
-  {% set category_slug = page.node.url.split('/')[0] %}
-  {% set category = resource.get_resource(category_slug+'/index.html') %}
-  {% if page.url.endswith('.html') and page != resource %}
-  <li class="{{category_slug}}">
-    <h3><a href="{{category.node.full_url}}">{{category.meta.title}}</a></h3>
-    <h2>{{page.meta.title}}</h2>
-    <p>{{page.meta.description}}</p>
-  </li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-This is the main page.
-{% endblock %}
+{% include "super_list.html" %}
+{% endblock main %}

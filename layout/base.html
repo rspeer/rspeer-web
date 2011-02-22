@@ -48,7 +48,7 @@
       {% for ancestor in (resource.node.parent.parent.parent, resource.node.parent.parent, resource.node.parent, resource.node) %}
         {% if ancestor %}
           {% set parent = ancestor.get_resource('index.html') %}
-          {% if parent != resource %}
+          {% if parent != resource and parent.meta.title %}
             <li>
               <a href="{{parent.node.full_url}}">
                 {{parent.meta.title}}

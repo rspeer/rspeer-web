@@ -1,0 +1,13 @@
+<ul id="super-list" class="masonry clearfix">
+{% for page in resource.node.walk_resources_sorted_by_date() %}
+  {% set category_slug = page.node.url.split('/')[1] %}
+  {% set category = resource.node.get_resource(category_slug+'/index.html') %}
+  {% if page.url.endswith('.html') and not page.url.endswith('index.html') %}
+  <li class="{{category_slug}}">
+    <h3><a href="{{category.node.full_url}}">{{category.meta.title}}</a></h3>
+    <h2><a href="{{content_url(page.relative_path)}}">{{page.meta.title}}</a></h2>
+    <p>{% filter markdown %}{{page.meta.description}}{% endfilter %}</p>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
