@@ -62,16 +62,16 @@
     </ul>
     {% endblock header %}
     </header>
-    <div id="main" role="main">
     {% block main %}
+    <div id="main" role="main">
         <article>
         {% filter markdown|typogrify -%}
         {% block markdown -%}
         {%- endblock markdown %}
         {% endfilter %}
         </article>
-    {% endblock main %}
     </div>
+    {% endblock main %}
     <footer>
         {% block footer %}{% endblock %}
     </footer>

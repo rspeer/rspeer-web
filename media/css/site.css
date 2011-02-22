@@ -86,9 +86,41 @@ a img { border: none; }
 }
 .breadcrumbs li {
     display: inline;
-    color: #ccf;
     font-family: "Kreon", "Georgia", serif;
     font-size: 18pt;
+}
+.breadcrumbs li a {
+    color: #ccf;
+}
+
+li.blog {
+  width: 460px;
+}
+li.research {
+  width: 460px;
+}
+
+li h3 a {
+  color: #eee;
+}
+
+li.blog h2 a {
+  color: #afa;
+}
+li.music h2 a {
+  color: #e6d;
+}
+li.project h2 a {
+  color: #ffa;
+}
+li.research h2 a {
+  color: #fcc;
+}
+li.fun h2 a {
+  color: #fa5;
+}
+li.puzzle h2 a {
+  color: #cff;
 }
 
 /**** Isotope styles ****/
@@ -163,36 +195,9 @@ body {
      -moz-border-radius: 0.8em;
           border-radius: 0.8em;
   background: #000;
-}
-
-#super-list.masonry li {
   width: 210px;
 }
-#super-list.masonry li.blog {
-  width: 460px;
-}
-#super-list.masonry li.research {
-  width: 460px;
-}
 
-#super-list.masonry li.blog h2 {
-  color: #afa;
-}
-#super-list.masonry li.music h2 {
-  color: #e6d;
-}
-#super-list.masonry li.project h2 {
-  color: #ffa;
-}
-#super-list.masonry li.research h2 {
-  color: #fcc;
-}
-#super-list.masonry li.fun h2 {
-  color: #fa5;
-}
-#super-list.masonry li.puzzle h2 {
-  color: #cff;
-}
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }

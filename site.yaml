@@ -1,8 +1,8 @@
 mode: development
 media_root: media
-media_url: file:///home/rspeer/hack/hyde-experiments/hyde-initial/media
+media_url: file:///home/rspeer/hack/website/media
 deploy_root: deploy
-base_url: file:///home/rspeer/hack/hyde-experiments/hyde-initial/deploy
+base_url: file:///home/rspeer/hack/website/deploy
 template: hyde.ext.jinja2
 plugins:
     - hyde.ext.plugins.meta.MetaPlugin
