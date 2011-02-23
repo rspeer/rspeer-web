@@ -51,7 +51,7 @@
           {% if parent != resource and parent.meta.title %}
             <li>
               <a href="{{parent.node.full_url}}">
-                {{parent.meta.title}}
+                {{parent.meta.collective or parent.meta.title}}
               </a>
               &rsaquo;
             </li>

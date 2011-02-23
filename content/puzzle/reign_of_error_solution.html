@@ -1,0 +1,94 @@
+===
+title: Reign of Error (solution)
+created: 2011-02-23
+published: False
+description: Solution to the "Reign of Error" puzzle.
+===
+
+<i>If you meant to look at the puzzle and not the solution, go
+[here][puzzle]!</i>
+
+## Reign of Error (solution)
+
+A few clues point to the basic mechanism of this puzzle:
+
+* The French Revolution theme.
+* The fact that "Error" is "Terror" with the first letter removed.
+* The fact that the flavortext above the puzzle is written in the voice of
+  Robespierre, a pun on my name.
+
+How did Robespierre solve the problem (as he perceived) that he was surrounded
+by enemies of the Revolution? By chopping off heads. Likewise, the first thing
+you need to do to solve this problem is to chop off the heads (first letters)
+of these nonsense words.
+
+    a SRA
+    e RTH
+    g MAN
+    g NDQ
+    i NCH
+    j MIL
+    k YOU
+    l THE
+    n ERD
+    o FRE
+    q EAP
+    r OCO
+    u EAD
+    v CTJ
+    w DEC
+    x LLE
+    y IKE
+    z IPH
+
+Many of the remaining three-letter fragments are letter sequences that are
+likely to occur in English (although there are some ugly ones like NDQ). This
+tends to indicate that they should be assembled into a message. In fact, making
+a message out of three-letter fragments is a common style of puzzle which the
+NPL calls an "anaquote" or "anaquip".
+
+The question marks below the puzzle help by showing the lengths of the words in
+the message. Except... there are 9 too few of them. And there are 9 words. How
+do you make them fit? By chopping off more heads, of course. With the "heads"
+in lowercase, you can make this message:
+
+    oCOLLECT jYOUR tHEADS rAND qDECIPHER dTHEM iLIKE eA pFRENCHMAN
+
+Of course, you're going to need to refer to what you did before to solve the
+puzzle. Here's the order you have to put the four-letter chunks in to make this
+message:
+
+    rOCO
+    xLLE
+    vCTU
+    kYOU
+    eRTH
+    uEAD
+    aSRA
+    gNDQ
+    wDEC
+    zIPH
+    nERD
+    lTHE
+    jMIL
+    yIKE
+    qEAP
+    oFRE
+    iNCH
+    gMAN
+
+The heads of the four-letter chunks are "RXVKEUAGWZNLJYQOIG", and the heads of
+the message are "OJTRQDIEP", and you're asked to "decipher them like a
+Frenchman". This is a Vigenere cipher, with the long phrase as the ciphertext
+and the short phrase as the key. If you decode the Vigenere cipher
+([here](http://sharkysoft.com/misc/vigenere/) is one site that does that), the
+cleartext is:
+
+    DOCTORSCHLESSINGER
+
+This is who the puzzle describes as the "enemy in hiding" -- it's cluing the
+talk-radio host better known as Dr. Laura. To finish the puzzle, you have to
+"behead" the answer to the clue like all the other enemies of the Revolution,
+removing the first letter of LAURA to get the solution, AURA.
+
+[puzzle]: {{ content_url('puzzle/reign_of_error.html') }}
