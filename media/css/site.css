@@ -77,17 +77,18 @@ a code {
   text-decoration: none;
 }
 
-a:hover,
-a:hover code { 
+p a:hover, li a:hover {
+  color: #eee;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .breadcrumbs li a:hover { 
   text-shadow:
     0px 0px 2px white,
     0px 0px 2px white;
 }
 
-a:active,
-a:active code {
-  color: #1FB;
-  background: black;
+a:active {
+  color: #eee;
 }
 
 a img { border: none; }
@@ -110,6 +111,12 @@ pre {
 
 p {
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.floatright {
+  float: right;
+  margin-left: 1em;
   margin-bottom: 1em;
 }
 
@@ -156,6 +163,9 @@ li.fun h2 a {
 }
 li.puzzle h2 a {
   color: #cff;
+}
+li h2 a {
+  color: #fff;
 }
 
 /**** Isotope styles ****/
