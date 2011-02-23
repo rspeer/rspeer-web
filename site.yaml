@@ -1,8 +1,8 @@
-mode: development
+mode: production
 media_root: media
-media_url: file:///home/rspeer/hack/website/media
+media_url: "http://web.media.mit.edu/~rspeer/media"
 deploy_root: deploy
-base_url: file:///home/rspeer/hack/website/deploy
+base_url: "http://web.media.mit.edu/~rspeer"
 template: hyde.ext.jinja2
 plugins:
     - hyde.ext.plugins.meta.MetaPlugin
