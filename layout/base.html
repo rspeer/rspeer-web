@@ -31,6 +31,11 @@
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="{{ media_url('css/site.css') }}">
   {% endblock css %}
+  
+  {% block feeds %}
+  <link href="{{content_url('atom.xml')}}" rel="alternate" title="Rob Speer - all updates" type="application/atom+xml"/>
+  <link href="{{content_url('blog/atom.xml')}}" rel="alternate" title="Rob Speer - Blog" type="application/atom+xml"/>
+  {% endblock feeds %}
 
   {% block headjs %}
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->

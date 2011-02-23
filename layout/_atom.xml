@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>{% block title %}{{resource.meta.title}}{%endblock%}</title>
+ {%block  self_url %}
+ <link href="{{resource.node.full_url}}/atom.xml" rel="self"/>
+ {%endblock%}
+ {%block  site_url %}
+ <link href="{{resource.node.full_url}}"/>
+ {%endblock%}{%block feed_extra%}{%endblock%}
+ <updated>{{xmldatetime(now)}}</updated>
+ <id>{{resource.node.full_url}}</id>
+ {% for node_page in resource.node.walk_resources() %}
+ {% if node_page.meta.published %}
+ <entry>
+   <title>{{node_page.meta.title}}</title>
+   <author><name>{{resource.meta.author}}</name></author>
+   <link href="{{content_url(node_page.relative_path)}}"/>
+   <updated>{{xmldatetime(node_page.meta.updated or node_page.meta.created)}}</updated>
+   <published>{{xmldatetime(node_page.meta.created)}}</published>
+   <id>{{content_url(node_page.relative_path)}}</id>
+   {%block entry_extra%}{%endblock%}
+   <content type="html">
+       {%filter escape%}{% filter markdown %}{{node_page.meta.description}}{% endfilter %}{%endfilter%}
+   </content>
+ </entry>
+ {%endif%}
+ {% endfor %}
+</feed>
+
