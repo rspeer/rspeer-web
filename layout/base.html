@@ -33,8 +33,7 @@
   {% endblock css %}
   
   {% block feeds %}
-  <link href="{{content_url('atom.xml')}}" rel="alternate" title="Rob Speer - all updates" type="application/atom+xml"/>
-  <link href="{{content_url('blog/atom.xml')}}" rel="alternate" title="Rob Speer - Blog" type="application/atom+xml"/>
+  <link href="{{content_url('atom.xml')}}" rel="alternate" title="Rob Speer" type="application/atom+xml"/>
   {% endblock feeds %}
 
   {% block headjs %}
@@ -81,7 +80,16 @@
     {% endblock disqus %}
     {% endblock main %}
     <footer>
-        {% block footer %}{% endblock %}
+      {% block footer %}
+      <hr>
+      (c) 2011 Rob Speer. 
+      <a href="mailto:rspeer@media mit edu ADD DOTS">Contact me</a> or
+      <a href="{{content_url('blog/atom.xml')}}" type="application/atom+xml">
+        <img src="{{media_url('img/feed.png')}}"
+             style="position: relative; top: 3px;"/>
+        stalk me in your RSS/Atom reader.
+      </a>
+      {% endblock %}
     </footer>
     {% endblock container%}
   </div> <!-- end of #container -->

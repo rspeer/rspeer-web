@@ -1,5 +1,5 @@
 ===
-title: Rob Speer - All updates
+title: Rob Speer
 published: False
 ===
 {% extends "_atom.xml" %}

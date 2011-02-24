@@ -104,6 +104,10 @@ a img { border: none; }
   background: #000;
 }
 
+footer {
+  font-size: 10pt;
+}
+
 pre {
   margin: 1em;
   font-size: 13pt;
