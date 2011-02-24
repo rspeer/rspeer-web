@@ -76,6 +76,9 @@
         {% endfilter %}
         </article>
     </div>
+    {% block disqus %}
+    {% include "disqus.html" %}
+    {% endblock disqus %}
     {% endblock main %}
     <footer>
         {% block footer %}{% endblock %}
