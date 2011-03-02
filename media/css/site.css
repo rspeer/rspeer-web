@@ -14,6 +14,12 @@ body {
   color: #FFF;
 }
 
+blockquote {
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid #68c;
+}
+
 section, nav, header, footer {
   display: block;
 }
