@@ -7,7 +7,7 @@
 
 body {
   padding: 20px;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Rosario', 'Verdana', sans-serif;
   font-size: 12pt;
   line-height: 1.3em;
   background: #333;
@@ -101,9 +101,10 @@ a img { border: none; }
 
 #main {
   margin: 1em;
-  padding: 1em;
+  padding: 2em;
   padding-top: 0.5em;
   width: 50em;
+  line-height: 1.6em;
   -webkit-border-radius: 0.8em;
      -moz-border-radius: 0.8em;
           border-radius: 0.8em;

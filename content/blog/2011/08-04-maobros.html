@@ -1,0 +1,105 @@
+===
+title: Super Mao Bros.
+created: 2011-08-04 03:18:00
+published: True
+description: A game made of nostalgia and random bit flipping.
+===
+
+## Super Mao Bros.
+
+Last night I fired up the nostalgia machine and decided to play an emulated
+version of Super Mario Bros. 1. It turns out that the ROM was corrupted, which
+would usually make it unplayable...
+
+...except SMB1's code is so resilient that that doesn't happen. The usual
+failure mode for a corrupted version of SMB1 is that you start in a fascinating
+level called [World 0-1](http://www.youtube.com/watch?v=WzaOstWfj_0), which
+reuses code from other levels to create a surprisingly playable level in a
+flooded castle. Finishing the level resets the game, though.
+
+So I couldn't play much of SMB1. But playing World 0 got me in the mood to
+experiment with other glitches by deliberately screwing with a game's memory
+(in the way that a Game Genie used to do), leading to a new game I call Super
+Mao Bros.
+
+<img src="{{media_url('img/mario-ow.png')}}"/>
+
+"Mao" is a card game that I played a lot in high school. One feature of the
+game is that the winner of each round adds or changes a rule, but they don't
+tell anyone what the new rule is -- they just penalize people for breaking it.
+That's why it's named after a crazed dictator.
+
+Super Mao Bros. is kind of similar, except it's you against a video game.
+Here's how you play:
+
+* Get a ROM of some NES game with distinct levels. I used Super Mario Bros. 3
+  (as my SMB1 was clearly glitched enough already). Super NES games aren't an
+  option; they have enough memory that you'll probably never see any tangible
+  differences.
+* Play the game in an emulator that lets you enter Game Genie codes during the
+  game. I use [mednafen](http://mednafen.sourceforge.net/) for this purpose --
+  and what's particularly nice is that it will treat any string of 6 letters as
+  a valid code.
+* Every time you beat a level, *save your state*, then make up an arbitrary
+  code and add it as a Game Genie code. (Memorable 6-letter words are best,
+  because you'll need all the help you can get keeping track of them.) For
+  example, you might add a new code named "FLOWER" whose value is "FLOWER".
+  The point is you have no idea what it will do to the game.
+* If the game crashes, restore your save state, figure out which code crashed
+  it, and replace that code with another one.
+* If you die, don't reload (that's cheating!). But you may still choose to
+  replace a code with a different one. There are many codes that won't crash
+  the game, but do make levels unwinnable.
+
+I've been having a lot of fun with this. I played a game where I had about 40
+playable codes going, and I got as far as World 4-1. I had to continue
+several times in World 3, because World 3 is already a bitch, my 20 years of
+muscle memory was no help with the new game mechanics, and the game was now
+inherently harder as well.
+
+You'll find lots of lists of Game Genie codes out there on the Web, of course
+-- both from people who want to cheat to make a game easier, and people who
+want to make it as glitchy as possible. But many of the codes I came across at
+random occupy an interesting middle ground of *slight* changes to the game that
+remain playable. I'll list some of my favorites (which may be inaccurate, as
+sometimes it's hard to tell which code does what).
+
+* RUSSIA: objects that fall off the screen, including dead enemies, might
+  *trampoline back onto it*. You can kick a turtle shell into a pit and it
+  might bounce out of the pit and kill you. This has an effect of making Hammer
+  Bros. encounters on the map very dangerous, as they might refuse to die.
+  Also, some freaky thing hovers in the air just behind your head no
+  matter which way you're facing, much as described in They Might Be Giants'
+  "Where Your Eyes Don't Go".
+* CHAPEL: every level starts out totally graphically corrupted, but when you
+  move, normal graphics scroll onto the screen. This one is playable -- the
+  actual gameplay doesn't change -- but it's *hard*, because you have to play
+  certain parts blind.
+* FLAVOR: changes the notes in the music. The music becomes much more
+  monotonous, but somehow remains mostly tonal.
+* MARKET: when you move onto a level on the world map, you can't move off of
+  it; you have to play it. *Except* that you can miraculously skip over
+  level 3-8, the much-loathed "fish eats you" level, if you move the right way!
+* BANKSY: when you die, the game crashes with a loud sudden noise.
+  Not recommended, but I'm amused at how it's subtler and meaner than the
+  codes that just instantly crash the game.
+* PIRATE: The best one. A chunk of each level gets rearranged vertically,
+  as if it were hit by an earthquake.
+  I haven't seen this make a level unplayable, but I have seen it make levels
+  where you have to find a very different path to the finish.
+  
+<img src="{{media_url('img/OMGHAX.png')}}"/><br>*Arrrr. We be rearrangin' ye
+levels, matey.*
+
+<img src="{{media_url('img/MARKET.png')}}"/><br>*This is more playable than it
+looks.*
+
+Mario's quest came to an end when physics simply stopped working in World 4,
+and no amount of disabling cheats and reloading would put it back. The memory
+had already been permanently corrupted, presumably. That's okay -- next time
+I'll just warp to World 4.
+
+I kind of wish I had recorded a video of this, but that would be hard to do.
+Anyway, there are tons of YouTube videos of glitched and hacked Mario games out
+there; the unique experience here is actually playing the game, and trying to
+make progress in a game that keeps changing under you.
