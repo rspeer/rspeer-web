@@ -7,9 +7,10 @@
 
 body {
   padding: 20px;
-  font-family: 'Rosario', 'Verdana', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 12pt;
-  line-height: 1.3em;
+  line-height: 1.4em;
+  font-weight: 300;
   background: #333;
   color: #FFF;
 }
@@ -24,9 +25,14 @@ section, nav, header, footer {
   display: block;
 }
 
+article p {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
 
-p {
-  margin-top: 1ex;
+article p strong {
+  font-weight: 800;
+  color: #ffd;
 }
 
 h1, h2, h3, h4, .tagline {
@@ -101,10 +107,10 @@ a img { border: none; }
 
 #main {
   margin: 1em;
-  padding: 2em;
+  padding: 3em;
   padding-top: 0.5em;
   width: 50em;
-  line-height: 1.6em;
+  line-height: 1.8em;
   -webkit-border-radius: 0.8em;
      -moz-border-radius: 0.8em;
           border-radius: 0.8em;
@@ -118,11 +124,6 @@ footer {
 pre {
   margin: 1em;
   font-size: 13pt;
-}
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .floatright {
